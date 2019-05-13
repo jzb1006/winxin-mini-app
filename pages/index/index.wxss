@@ -166,12 +166,13 @@ font-weight: 500;
 
 
 .top-Nav2 {
-  display: flex;
+  /* display: flex; */
   flex-direction: row;
   padding: 24rpx;
   background: #fff;
   justify-content: space-between;
   border-bottom: 20rpx solid #eee;
+  display: none;
 }
 
 .top-Nav2-item {

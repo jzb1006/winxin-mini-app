@@ -25,7 +25,7 @@ Page({
     title: '页面内容',
     pageData: {},
     pagesList: {},
-    display: 'none',
+    display: 'display',
     wxParseData: [],
     praiseList:[],
     dialog: {
@@ -43,7 +43,7 @@ Page({
   onLoad: function (options) {
     var self = this;
     wx.setNavigationBarTitle({
-      title: '关于WordPress微信小程序',
+      title: '关于天美',
       success: function (res) {
         // success
       }

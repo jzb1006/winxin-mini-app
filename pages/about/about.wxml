@@ -17,7 +17,11 @@
 
 <view class="container" style="display:{{display}}">
     <template is="tempHeader" />
-
+    <view class="zan-btn">按钮</view>
+    <view class="about">
+       <view>2016年,天美设计工作室诞生--</view>
+        天美设计工作室成立于2016年，是一家集PPT策划、制作为一体的专业幻灯片制作工作室。锐博立足于PPT策划、设计、制作服务领域，以市场为基础，以雄厚的技术实力为后盾，致力于为客户度身定做属于自己、受与大众的完美PPT。
+    </view>
     <view class="wrapper">
         <view class="excerpt">
             <!--  <rich-text nodes="{{pageData.content.rendered}}"></rich-text> -->
@@ -27,10 +31,10 @@
  <template is="login-popup" data="{{show: isLoginPopup, userInfo: userInfo}}"></template>
      
         <view style='text-align:center'>
-            <button class="gotowebpage-button" formType="submit" size="mini" bindtap="gotowebpage">打开“守望轩”网站</button>
+            <!-- <button class="gotowebpage-button" formType="submit" size="mini" bindtap="gotowebpage">打开“守望轩”网站</button> -->
             <modal title="{{dialog.title}}" hidden="{{dialog.hidden}}" no-cancel bindconfirm="confirm">{{dialog.content}}</modal>
         </view>
-        <view class="praisePost">
+        <!-- <view class="praisePost">
             <view style='text-align:center'>
                 <button class="praise-button" formType="submit" size="mini" bindtap="praise">捐赠</button>
 
@@ -46,7 +50,7 @@
                     <image src="{{item}}" class="gravatarLikeImg"></image>
                 </block>
             </view>
-        </view>
+        </view> -->
     </view>
    
       <view class="copyright">

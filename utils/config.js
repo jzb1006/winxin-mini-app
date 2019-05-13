@@ -13,9 +13,9 @@
 
 //配置域名,域名只修改此处。
 //如果wordpress没有安装在网站根目录请加上目录路径,例如："www.watch-life.net/blog"
-var DOMAIN = "www.watch-life.net";
-var MINAPPTYPE="0";//小程序的类型，如果是企业小程序请填：0 ，如果是个人小程序请填：1
-var WEBSITENAME="守望轩"; //网站名称
+var DOMAIN = "www.jzb1006.com";
+var MINAPPTYPE="1";//小程序的类型，如果是企业小程序请填：0 ，如果是个人小程序请填：1
+var WEBSITENAME ="天美工作室"; //网站名称
 var ABOUTID = 1136; //小程序“关于”页面的id,此id是wordpress网站"页面"的id,注意这个"页面"是wordpress的"页面"，不是"文章"
 var PAGECOUNT='10'; //每页文章数目
 //CATEGORIESID 指定为all或者指定具体的分类id，请选择其一。
@@ -23,7 +23,7 @@ var CATEGORIESID='all';  //专题页显示全部的分类
 //var CATEGORIESID = '1,1059,98,416,189,374,6,463';//指定专题页显示的分类的id
 //INDEXLISTTYPE 指定为all或者指定具体的分类id，请选择其一。
 var INDEXLISTTYPE="all"; //首页显示所有分类
-//var INDEXLISTTYPE ="11" //指定首页显示分类的id
+// var INDEXLISTTYPE ="11" //指定首页显示分类的id
 var PAYTEMPPLATEID = 'hzKpxuPF2rw7O-qTElkeoE0lMwr0O4t9PJkLyt6v8rk';//鼓励消息模版id
 var REPLAYTEMPPLATEID = 'IiAVoBWP34u1uwt801rI_Crgen7Xl2lvAGP67ofJLo8';//回复评论消息模版id
 var ZANIMAGEURL = 'https://www.watch-life.net/images/2017/07/zsm400.jpg';//微信鼓励的图片链接，用于个人小程序的赞赏
@@ -31,7 +31,7 @@ var LOGO = "../../images/logo-icon.png"; // 网站的logo图片
 //设置downloadFile合法域名,不带https ,在中括号([])里增加域名，格式：{id=**,domain:'www.**.com'}，用英文逗号分隔。
 //此处设置的域名和小程序与小程序后台设置的downloadFile合法域名要一致。
 var DOWNLOADFILEDOMAIN = [
-    { id: 1, domain: 'www.watch-life.net'}
+    { id: 1, domain: 'www.jzb1006.com'}
 
 ];
  //首页图标导航
@@ -58,7 +58,7 @@ export default {
   getPayTemplateId: PAYTEMPPLATEID,
   getPageCount: PAGECOUNT,
   getCategoriesID :CATEGORIESID,
-  getIndexNav: INDEXNAV,
+  // getIndexNav: INDEXNAV,
   getReplayTemplateId: REPLAYTEMPPLATEID,
   getMinAppType: MINAPPTYPE,
   getZanImageUrl: ZANIMAGEURL,

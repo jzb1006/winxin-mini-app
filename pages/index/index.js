@@ -129,6 +129,7 @@ Page({
     //获取滑动图片的文章
     var getPostsRequest = wxRequest.getRequest(Api.getSwiperPosts());
     getPostsRequest.then(response => {
+      console.log(response);
         if (response.data.status =='200' && response.data.posts.length > 0) {
                 self.setData({
                     // postsShowSwiperList: response.data.posts,

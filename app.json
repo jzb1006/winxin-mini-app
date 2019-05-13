@@ -14,10 +14,16 @@
         "pages/comments/comments",
         "pages/poster/poster"
     ],
+    "plugins": {
+      "tencentvideo": {
+        "version": "1.2.4",
+        "provider": "wxa75efa648b60994b"
+      }
+    },
     "window": {
         "backgroundTextStyle": "dark",
-        "navigationBarBackgroundColor": "#118fff",
-        "navigationBarTitleText": "守望轩",
+        "navigationBarBackgroundColor": "#ff5200",
+        "navigationBarTitleText": "天美工作室",
         "navigationBarTextStyle": "white"
     },
     "tabBar": {

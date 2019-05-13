@@ -49,6 +49,7 @@ Page({
         //console.log(Api.getCategories());
         var getCategoriesRequest = wxRequest.getRequest(Api.getCategories());
         getCategoriesRequest.then(response => {
+          
             if (response.statusCode === 200) {
                 self.setData({
                     floatDisplay: "block",
@@ -60,12 +61,13 @@ Page({
                         item.subimg = "subscription.png";
                         return item;
                     })),
+                 
                 });
             }
             else {
                 console.log(response);
             }
-
+          console.log(self.data.categoriesList);
         })
         .then(res=>{
             if (self.data.openid) {                

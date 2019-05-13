@@ -16,12 +16,7 @@
 <import src="../../templates/login-popup.wxml" />
 
 <view class="container" style="display:{{display}}">
-    <template is="tempHeader" />
-    <view class="zan-btn">按钮</view>
-    <view class="about">
-       <view>2016年,天美设计工作室诞生--</view>
-        天美设计工作室成立于2016年，是一家集PPT策划、制作为一体的专业幻灯片制作工作室。锐博立足于PPT策划、设计、制作服务领域，以市场为基础，以雄厚的技术实力为后盾，致力于为客户度身定做属于自己、受与大众的完美PPT。
-    </view>
+    <!-- <template is="tempHeader" /> -->
     <view class="wrapper">
         <view class="excerpt">
             <!--  <rich-text nodes="{{pageData.content.rendered}}"></rich-text> -->

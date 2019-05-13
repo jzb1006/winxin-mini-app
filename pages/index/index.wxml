@@ -13,7 +13,7 @@
 
 <import src="../../templates/common-list.wxml" />
 <import src="../../templates/copyright.wxml" />
-<txv-video vid="r0030m5ye88" playerid="r0030m5ye88" autoplay="{{true}}"></txv-video>
+<!-- <txv-video vid="r0030m5ye88" playerid="r0030m5ye88" autoplay="{{true}}"></txv-video> -->
 <view class="index-header" style="display:{{displaySwiper}}">
   <swiper class="index-swiper" indicator-dots="true" interval="10000" autoplay="true" indicator-color="rgba(255, 255, 255, .2)" indicator-active-color="rgba(255, 255, 255, .7)">
     <block wx:key="id" wx:for="{{postsShowSwiperList}}">

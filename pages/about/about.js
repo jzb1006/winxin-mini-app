@@ -23,6 +23,8 @@ var app = getApp();
 Page({
   data: {
     title: '页面内容',
+    content:'',
+    aboutApiUrl:'https://www.jzb1006.com/wp-json/wp/v2/pages/139',
     pageData: {},
     pagesList: {},
     display: 'display',
@@ -58,6 +60,21 @@ Page({
 
         }
       })
+
+    // Api.getPostByID(139).then((res)=>{
+    //    console.log(res);
+    // }).catch((err)=>{
+    //    console.log(err)
+    // });
+    // console.log();
+    wxRequest.getRequest(Api.getPageByID(139)).then((res) => {
+      var date = res.data;
+      self.data.content = date.content.rendered;
+      self.data.title = date.title.rendered;
+      console.log(self.data.content);
+    }).catch((err)=>{
+       console.log(err)
+    });
   },
   praise: function () {     
       

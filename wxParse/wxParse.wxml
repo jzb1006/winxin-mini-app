@@ -16,6 +16,13 @@
     <video class="{{item.classStr}} wxParse-{{item.tag}}-video" src="{{item.attr.src}}"></video>
   </view>
 </template>
+<template name="wxParseTXVideo">
+  <!--增加video标签支持，并循环添加-->
+  <view class="{{item.classStr}} wxParse-{{item.tag}}" style="{{item.styleStr}}">
+    <txv-video class="{{item.classStr}} wxParse-{{item.tag}}-video" vid="{{item.attr.vid}}" playerid="{{item.attr.vid}}" autoplay="{{item.attr.autoplay}}"></txv-video>
+   
+  </view>
+</template>
 <template name="wxParseAudio">
   <!--增加audio标签支持，并循环添加-->
   <view class="{{item.classStr}} wxParse-{{item.tag}}" style="{{item.styleStr}}">
@@ -81,6 +88,11 @@
     <!--video类型-->
     <block wx:elif="{{item.tag == 'video'}}">
       <template is="wxParseVideo" data="{{item}}" />
+    </block>
+   
+   <!--v-video类型-->
+    <block wx:elif="{{item.tag == 'txv-video'}}">
+      <template is="wxParseTXVideo" data="{{item}}" />
     </block>
 
     <!--audio类型-->

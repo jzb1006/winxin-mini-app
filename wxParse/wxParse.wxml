@@ -52,7 +52,7 @@
 
 <template name="wxParse">
   <block wx:for="{{wxParseData}}" wx:key="">
-    {{item.tag}}
+    <!-- {{item.tag}} -->
     <template is="wxParse0" data="{{item}}" />
   </block>
 </template>

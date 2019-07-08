@@ -15,7 +15,7 @@
 //如果wordpress没有安装在网站根目录请加上目录路径,例如："www.watch-life.net/blog"
 var DOMAIN = "www.jzb1006.com";
 var MINAPPTYPE="1";//小程序的类型，如果是企业小程序请填：0 ，如果是个人小程序请填：1
-var WEBSITENAME ="天美工作室"; //网站名称
+var WEBSITENAME ="广州曼巴文化科技"; //网站名称
 var ABOUTID = 139; //小程序“关于”页面的id,此id是wordpress网站"页面"的id,注意这个"页面"是wordpress的"页面"，不是"文章"
 var PAGECOUNT='10'; //每页文章数目
 //CATEGORIESID 指定为all或者指定具体的分类id，请选择其一。

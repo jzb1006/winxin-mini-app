@@ -45,7 +45,7 @@ Page({
   onLoad: function (options) {
     var self = this;
     wx.setNavigationBarTitle({
-      title: '关于天美',
+      title: '关于曼巴',
       success: function (res) {
         // success
       }

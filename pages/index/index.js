@@ -134,8 +134,8 @@ Page({
                 self.setData({
                     // postsShowSwiperList: response.data.posts,
                     postsShowSwiperList: self.data.postsShowSwiperList.concat(response.data.posts.map(function (item) {
-                        if (item.post_medium_image == null || item.post_medium_image == '') {
-                            item.post_medium_image = "../../images/logo700.png";
+                        if (item.post_large_image == null || item.post_large_image == '') {
+                            item.post_large_image = "../../images/logo700.png";
 
                         }
                         return item;
@@ -206,8 +206,8 @@ Page({
                                 item.categoryImage = "";
                             }
     
-                            if (item.post_medium_image == null || item.post_medium_image == '') {
-                                item.post_medium_image = "../../images/logo700.png";
+                            if (item.post_large_image == null || item.post_large_image == '') {
+                                item.post_large_image = "../../images/logo700.png";
                             }
                             item.date = util.cutstr(strdate, 10, 1);
                             return item;

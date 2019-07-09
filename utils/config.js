@@ -42,11 +42,11 @@ var DOWNLOADFILEDOMAIN = [
  //'appid' 当redirecttype为miniapp时，这个值为其他微信小程序的appid，如果redirecttype为apppage，webpage时，这个值设置为空。
  //'extraData'当redirecttype为miniapp时，这个值为提交到其他微信小程序的参数，如果redirecttype为apppage，webpage时，这个值设置为空。
 var INDEXNAV = [
-  { id: '1', name: '微慕', image: '../../images/nav-icon1.png', url: 'pages/index/index', redirecttype: 'miniapp', appid: 'wx074a216a7aabc30c', extraData: '' },
-  { id: '2', name: '企业版', image: '../../images/nav-icon2.png', url: 'pages/index/index', redirecttype: 'miniapp', appid: 'wxc1771b619b83316b', extraData: '' },
-  { id: '3', name: '旅游版', image: '../../images/nav-icon3.png', url: 'pages/index/index', redirecttype: 'miniapp', appid: 'wxa43aaa8416cdbd61', extraData: '' },
-  { id: '4', name: '图片版', image: '../../images/nav-icon4.png', url: 'pages/index/index', redirecttype: 'miniapp', appid: 'wxe9440e3d24b04152', extraData: ''},
-  { id: '5', name: '微店', image: '../../images/nav-icon5.png', url: 'pages/shelf/shelf', redirecttype: 'miniapp', appid: 'wx55ea6098e41af5c4', extraData: ''}
+  { id: '1', name: 'PPT', image: '../../images/101.png', url: '../../pages/list/list?categoryID=17', redirecttype: 'apppage', appid: '', extraData: '' },
+  { id: '2', name: '平面设计', image: '../../images/102.png', url: '../../pages/list/list?categoryID=15', redirecttype: 'apppage', appid: '', extraData: '' },
+  { id: '3', name: '会议策划', image: '../../images/100.png', url: '../../pages/list/list?categoryID=16', redirecttype: 'apppage', appid: '', extraData: '' },
+  // { id: '4', name: '图片版', image: '../../images/nav-icon4.png', url: 'pages/index/index', redirecttype: 'miniapp', appid: 'wxe9440e3d24b04152', extraData: ''},
+  // { id: '5', name: '微店', image: '../../images/nav-icon5.png', url: 'pages/shelf/shelf', redirecttype: 'miniapp', appid: 'wx55ea6098e41af5c4', extraData: ''}
   // { id: '6', name: '教程', image: '../../images/app.png', url: '../../pages/list/list?categoryID=1059', redirecttype: 'apppage', appid: '', extraData: ''}
     
     ];
@@ -58,7 +58,7 @@ export default {
   getPayTemplateId: PAYTEMPPLATEID,
   getPageCount: PAGECOUNT,
   getCategoriesID :CATEGORIESID,
-  // getIndexNav: INDEXNAV,
+  getIndexNav: INDEXNAV,
   getReplayTemplateId: REPLAYTEMPPLATEID,
   getMinAppType: MINAPPTYPE,
   getZanImageUrl: ZANIMAGEURL,

@@ -28,9 +28,11 @@
 
 swiper.index-swiper {
   position: relative;
-  height: 300rpx;
+  height: 250rpx;
   width: 95%;
   margin: 10rpx auto;
+  border-radius: 10rpx;
+   overflow: hidden;
 }
 
 swiper .swiper-mask {
@@ -119,10 +121,10 @@ swiper .swiper-desc {
 .search-pancel {
   display: flex;
   flex-direction: row;
-  background-color: #eee;
+  background-color: #fff;
   padding: 24rpx 24rpx;
-  box-shadow:1px 1px 10px 10px #ddd;
-  margin-bottom: 30rpx;
+  /* box-shadow:1px 1px 10px 10px #ddd; */
+  /* margin-bottom: 30rpx; */
 }
 
 .search-pancel image {

@@ -25,7 +25,8 @@
     </view>
   </form>
   <!--搜索-->
-  <swiper class="index-swiper" indicator-dots="true" interval="10000" autoplay="true" indicator-color="rgba(255, 255, 255, .2)" indicator-active-color="rgba(255, 255, 255, .7)">
+  <!--轮播图-->
+  <swiper class="index-swiper" indicator-dots="true" interval="10000" autoplay="true" indicator-color="rgba(255, 255, 255, .2)" indicator-active-color="rgba(253,79,66, 1)">
     <block wx:key="id" wx:for="{{postsShowSwiperList}}">
       <swiper-item id="{{item.id}}" index="{{index}}" data-redicttype="{{item.type}}" data-appid="{{item.appid}}" data-url="{{item.url}}" bindtap="redictAppDetail">
         <image mode="aspectFill" src="{{item.post_large_image}}" style="width:100%" />
@@ -36,6 +37,7 @@
       </swiper-item>
     </block>
   </swiper>
+  <!--轮播图-->
 </view>
 
 <view class="showerror" style="display:{{showerror}}">

@@ -208,7 +208,7 @@
                                             <button class="share-button share-button touch-active" open-type="share">
                                             </button>
                                         </view>
-                                        <view style="width:20%; float:left; text-align:center">
+                                        <!-- <view style="width:20%; float:left; text-align:center">
                                             <view>
                                                 <image src="../../images/poster.png" catchtap="onCreatePoster" class="img-menu"></image>
                                             </view>
@@ -223,7 +223,7 @@
                                             <view>
                                                 <text>阅读原文</text>
                                             </view>
-                                        </view>
+                                        </view> -->
 
                                         <view style="width:20%; float:left; text-align:center">
                                             <view>
@@ -233,7 +233,7 @@
                                                 <text>点赞</text>
                                             </view>
                                         </view>
-                                        <view style="width:20%; float:left; ">
+                                        <!-- <view style="width:20%; float:left; ">
                                             <view>
                                                 <image src="../../images/appreciation.png" catchtap="praise" class="img-menu"></image>
                                             </view>
@@ -241,7 +241,7 @@
                                                 <text>鼓励</text>
                                             </view>
 
-                                        </view>
+                                        </view> -->
                                     </view>
                                 </view>
                             </view>
